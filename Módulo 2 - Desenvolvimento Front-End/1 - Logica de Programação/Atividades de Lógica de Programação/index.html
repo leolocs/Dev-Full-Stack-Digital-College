@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Lógica de Programação</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Atividades de Lógica de Programação</h1>
+    <main>
+        <section>
+            <h3>Operadores Aritméticos</h3>
+            <p>Os operadores aritméticos são utilizados para realizar operações matemáticas básicas. Os principais
+                operadores aritméticos são:</p>
+            <ul>
+                <li><strong>Soma (+)</strong>: Adiciona dois valores.</li>
+                <li><strong>Subtração (-)</strong>: Subtrai um valor de outro.</li>
+                <li><strong>Multiplicação (*):</strong> Multiplica dois valores.</li>
+                <li><strong>Divisão (/)</strong>: Divide um valor pelo outro.</li>
+                <li><strong>Resto da Divisão (%):</strong> Retorna o resto da divisão entre dois valores.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Atv1: Escreva um algoritmo que calcule e mostre a área de um quadrado</h3>
+            <p>Para calcular a área de um quadrado, utilizamos a fórmula:</p>
+            <p><strong>Área = lado * lado</strong></p>
+            <p>Onde "lado" é o comprimento de um dos lados do quadrado.</p>
+            <input type="text" id="lado" placeholder="Digite o valor do lado do quadrado">
+            <button onclick="calcularAreaQuadrado()">Calcular Área</button>
+            <p id="resultado_atv1"></p>
+        </section>
+        <section>
+            <h3>Atv2: Escreva um algoritmo que calcule e mostre a área de um retângulo</h3>
+            <p>Para calcular a área de um retângulo, utilizamos a fórmula:</p>
+            <p><strong>Área = largura * altura</strong></p>
+            <p>Onde "largura" é o comprimento de um dos lados do retângulo e "altura" é o comprimento do outro lado.</p>
+            <input type="text" id="largura" placeholder="Digite o valor da largura do retângulo">
+            <input type="text" id="altura" placeholder="Digite o valor da altura do retângulo">
+            <button onclick="calcularAreaRetangulo()">Calcular Área</button>
+            <p id="resultado_atv2"></p>
+        </section>
+        <section>
+            <h3>Atv3: Escreva um algoritmo que receba 4 valores. Calcule o produto dos dois primeiros e some com o
+                produto dos dois últimos. Mostre na tela.
+                Exemplo 1:
+                Entrada: 500.00 (ex: Monitor 24")
+                Saída:
+                Preço do produto: R$ 500.0
+                Desconto de 10%: R$ 25.0
+                Preço do produto com desconto: 475.0
+            </h3>
+            <input type="text" id="valor1" placeholder="Digite o primeiro valor">
+            <input type="text" id="valor2" placeholder="Digite o segundo valor">
+            <input type="text" id="valor3" placeholder="Digite o terceiro valor">
+            <input type="text" id="valor4" placeholder="Digite o quarto valor">
+            <button onclick="calcularValores()">Calcular</button>
+            <p id="resultado_atv3"></p>
+        </section>
+        <section>
+            <h3>
+                Atv4: Escreva um algoritmo para calcular o desconto de 10% sobre o preço de compra de um produto (um bem, um objeto).
+                Apresente o novo preço na tela.
+                Entrada: 500.00 (ex: Monitor 24")
+                Saída:
+                Preço do produto: R$ 500.0
+                Desconto de 10%: R$ 25.0
+                Preço do produto com desconto: 475.
+            </h3>
+            <input type="text" id="preco_produtoatv4" placeholder="Digite o preço do produto">
+            <button onclick="calcularDesconto10()">Calcular Desconto</button>
+            <p id="resultado_atv4"></p>
+        </section>
+        <section>
+            <h3>Atv5: Escreva um algoritmo que receba o preço de um produto e o percentual de desconto e calcule esse
+                desconto sobre o preço do produto, apresentando o valor do desconto e o novo
+                preço do produto.
+                Exemplo 1:
+                Entrada: 500.00 (ex: Monitor), 10% (ex: desconto), 
+                Saída:
+                Preço do produto: R$ 500.0
+                Desconto de 10.0%: R$ 50.0
+                Preço do produto com desconto: 450.0
+            </h3>
+            <label for="preco_produto">Digite o preço do Produto:</label>
+            <input type="text" id="preco_produto_atv5" placeholder="300.00"><br>
+            <label for="percentual_produto_atv5">Digite o percentual de desconto para o produto:</label>
+            <input type="text" id="percentual_produto_atv5" placeholder="Digite o percentual de desconto">
+            <button onclick="calcularDescontoInserido ()">Calcular Desconto</button>
+            <p id="resultado_atv5"></p>
+        </section>
+        <section>
+            <h3>Atv6: Escreva um algoritmo que receba 2 números inteiros. Inverta os números
+            informados e mostre na tela. Ex: valorA passa a ter o conteúdo de valorB e valorB
+            passa a ter o conteúdo de valorA.
+            Exemplo:
+            Entrada:
+            valorA recebe 3
+            valorB recebe 5
+            Saída:
+            Valores originais:
+            - Valor A: 3
+            - Valor B: 5
+            Valores invertidos:
+            - Valor A: 5
+            - Valor B: 3
+            </h3>
+            <label for="numA">Digite o valor de A:</label>
+            <input type="text" id="numA" placeholder="Digite o valor de A">
+            <label for="numB">Digite o valor de B:</label>
+            <input type="text" id="numB" placeholder="Digite o valor de B">
+            <button onclick="inverterValores()">Inverter Valores</button>
+            <p id="resultado_inversao"></p>
+        </section>
+        <section>
+            <h3>Atv7: Considerando que, para um consórcio, sabe-se o número total de parcelas, a
+                quantidade de parcelas pagas e o valor da parcela (fixa), escreva um algoritmo
+                que mostre o saldo devedor do cliente.
+                Exemplo:
+                Entrada:
+                Total de Parcelas: 60
+                Número de parcelas pagas: 18
+                Valor das parcelas: R$ 566.78
+                Saída:
+                Valor total do consórcio: R$ 34006.80
+                Saldo devedor: R$ 23804.76
+            </h3>
+            <label for="total_parcelas">Total de Parcelas:</label>
+            <input type="text" id="total_parcelas" placeholder="Digite o total de parcelas">
+            <label for="parcelas_pagas">Número de parcelas pagas:</label>
+            <input type="text" id="parcelas_pagas" placeholder="Digite o número de parcelas pagas">
+            <label for="valor_parcela">Valor das parcelas:</label>
+            <input type="text" id="valor_parcela" placeholder="Digite o valor das parcelas">
+            <button onclick="calcularSaldoDevedor()">Calcular Saldo Devedor</button>
+            <p id="resultado_saldo_devedor"></p>
+        </section>
+        <section>
+            <h3>Atv8: Escreva um algoritmo que receba 3 notas de um estudante. Calcule a média
+                das notas e mostre na tela.</h3>
+            <label for="nota1">Digite a primeira nota:</label>
+            <input type="text" id="nota1" placeholder="Digite a primeira nota">
+            <label for="nota2">Digite a segunda nota:</label>
+            <input type="text" id="nota2" placeholder="Digite a segunda nota">
+            <label for="nota3">Digite a terceira nota:</label>
+            <input type="text" id="nota3" placeholder="Digite a terceira nota">
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <p id="resultado_media"></p>
+        </section>
+        <h2>Lista de Atividades 2 (if else, switch case)</h2>
+        <section>
+            <h3>Atv9: Escreva um algoritmo que receba 4 notas. Calcule a média das notas e mostre
+                na tela. Se a média for maior ou igual a 6, escreva "Aprovado", senão escreva
+                "Reprovado".
+                Exemplo:
+                Entrada:
+                nota 1: 7
+                nota 2: 6.3
+                nota 3: 8
+                nota 4: 5.5
+                Saída:
+                Média: 6.7
+                Aprovado!
+            </h3>
+            <label for="nota1">Digite a primeira nota:</label>
+            <input type="text" id="nota1" placeholder="Digite a primeira nota">
+            <label for="nota2">Digite a segunda nota:</label>
+            <input type="text" id="nota2" placeholder="Digite a segunda nota">
+            <label for="nota3">Digite a terceira nota:</label>
+            <input type="text" id="nota3" placeholder="Digite a terceira nota">
+            <label for="nota4">Digite a quarta nota:</label>
+            <input type="text" id="nota4" placeholder="Digite a quarta nota">
+            <button onclick="calcularMedia4notas()">Calcular Média</button>
+            <p id="resultado_media4notas"></p>
+        </section>
+        <section>
+            <h3>
+                Atv10:Escreva um algoritmo que verifique se o usuário informou o nome. Se o nome
+                estiver em branco, mostre a frase "Bem-vindo(a) visitante!", senão escreva
+                "Bem-vindo(a) " e o nome do usuário (ex: "Bem-vindo(a) Marnei").
+                Exemplo 1:
+                Entrada:
+                nome recebe "Marnei"
+                Saída:
+                "Bem-vindo(a) Marnei!"
+            </h3>
+            <label for="nome_usuario">Digite seu nome:</label>
+            <input type="text" id="nome_usuario" placeholder="Digite seu nome">
+            <button onclick="verificarNome()">Verificar Nome</button>
+            <p id="resultado_nome"></p>
+        </section>
+        <section>
+            <h3>Atv11: Escreva um algoritmo que verifique se o usuário informou o valor. Se o valor
+                for nulo, mostre a frase "Erro ao acessar um valor nulo na memória", senão
+                escreva "Valor informado: " e o valor (ex: "Valor informado: 23").
+            </h3>
+            <label for="valor_informado">Digite um valor:</label>
+            <input type="text" id="valor_informado" placeholder="Digite um valor">
+            <button onclick="verificarValor()">Verificar Valor</button>
+            <p id="resultado_valor"></p>
+        </section>
+        <section>
+            <h3>Atv12: Escreva um algoritmo que receba 1 valor inteiro. Mostre se o valor informado é:
+                Par, Ímpar ou Zero.</h3>
+            <label for="valor_informado">Digite um valor:</label>
+            <input type="text" id="valor_informado" placeholder="Digite um valor">
+            <button onclick="verificarParouImpar()">Verificar Valor</button>
+            <p id="resultado_valor"></p>
+        </section>
+        <section>
+            <h3>
+                Atv13: Escreva um algoritmo que receba 2 valores. Verifique qual o maior valor, qual
+                o menor valor, ou se são iguais.
+            </h3>
+            <label for="numA">Digite o primeiro número:</label>
+            <input type="text" id="numA" placeholder="Digite o primeiro número:">
+            <label for="numB">Digite o segundo número:</label>
+            <input type="text" id="numB" placeholder="Digite o segundo número:">
+            <button onclick="verificarMaiorMenorIgual()">Verificar Números</button>
+            <p id="resultado_maior_menor_igual"></p>
+        </section>
+        <section>
+            <h3>
+                Atv14: Tendo como entrada a altura e o sexo (F: feminino ou M: masculino) de uma
+                pessoa, escreva um algoritmo que calcule e imprima seu peso ideal, utilizando as
+                seguintes fórmulas:
+                Mulheres: (62.1 * altura) - 44.7
+                Homens: (72.7 * altura) - 58
+            </h3>
+            <label for="altura">Digite sua altura (em metros):</label>
+            <input type="text" id="altura" placeholder="Digite sua altura">
+            <label for="sexo">Digite seu sexo (F/M):</label>
+            <input type="text" id="sexo" placeholder="Digite seu sexo">
+            <button onclick="calcularPesoIdeal()">Calcular Peso Ideal</button>
+            <p id="resultado_peso_ideal"></p>
+        </section>
+        <section>
+            <h3>
+                Escreva um algoritmo que construa um menu de cadastro que tenhas  as opções:
+                C)(Cadastrar/Inserir) Create
+                R)(Buscar/Ler) Read
+                U)(Editar/Atualizar) Update
+                D)(Excluir/Apagar) Delete
+            </h3>
+            <label for="opcao_menu">Escolha uma opção (C, R, U, D):</label>
+        </section>
+        <section>
+            <h3>
+            Ano bissexto
+            15. Todo ano a Terra completa um movimento chamado Translação, que é uma
+            volta ao redor do Sol, e dura 365 dias e 6 horas. A cada 4 anos, essas 6 horas
+            somadas, adicionam 1 dia (6 * 4 = 24) no mês de fevereiro (dia 29) e o ano é
+            chamado de Bissexto.
+            Para saber se um ano é Bissexto, verificamos se o ano é divisível por 4. Depois
+            verificamos se o ano NÃO é divisível por 100, exceto se o ano for divisível por 400.
+            Escreva um algoritmo que verifique se o ano informado é Bissexto.
+            </h3>
+            <label for="ano">Digite um ano:</label>
+            <input type="text" id="ano" placeholder="Digite um ano">
+            <button onclick="verificarAnoBissexto()">Verificar Ano Bissexto</button>
+            <p id="resultado_ano_bissexto"></p>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
