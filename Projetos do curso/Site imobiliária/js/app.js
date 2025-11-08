@@ -44,9 +44,11 @@ listaImoveis.forEach((imovel) => {
 
     const titulo = document.createElement("h3");
     titulo.textContent = imovel.titulo;
+    divConteudo.appendChild(titulo);
     
     const descricao = document.createElement("p");
     descricao.textContent = imovel.descricao;
+    divConteudo.appendChild(descricao);
 
     //Info
     const divInfo = document.createElement("div");
