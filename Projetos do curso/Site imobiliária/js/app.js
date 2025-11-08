@@ -29,6 +29,7 @@ listaImoveis.forEach((imovel) => {
     //Foto
     const divFoto = document.createElement("div");
     divFoto.classList.add("foto");
+
     divFoto.setAttribute("id","foto");
     cardImovel.appendChild(divFoto)
 
