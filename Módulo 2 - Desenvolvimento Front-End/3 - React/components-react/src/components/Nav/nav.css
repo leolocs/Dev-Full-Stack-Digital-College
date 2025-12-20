@@ -1,0 +1,22 @@
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav li {
+    list-style: none;
+}
